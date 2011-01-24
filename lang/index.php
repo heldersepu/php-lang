@@ -56,7 +56,7 @@
         <table border="0" cellspacing="10">
         <tr>
         <td>Key :</td>
-        <td><input type='text' size='20' maxlength='18' style='font-family: Courier' name='strKey' value="<?php echo $strKey ?>" /></td>
+        <td><input type='text' size='30' maxlength='25' style='font-family: Courier' name='strKey' value="<?php echo $strKey ?>" /></td>
         </tr>
         <tr>
         <td>Value : </td>
@@ -79,21 +79,21 @@
     function doPost($strKey, $strValue)
     {
         if (substr($strKey,0,2) == '//'){
-            $strNewLine = "\n    " . $strKey . $strValue . "\n" ;
+            $strNewLine = "\n        " . $strKey . $strValue . "\n" ;
         }
         else {
-            $strNewLine = "    " . str_pad($strKey,20) . " => " . $strValue . "\n" ;
+            $strNewLine = "        " . str_pad($strKey, 29) . " = " . $strValue . "\n" ;
         }
         foreach(getLangFiles() as $key => $fileName) {
-            //Search for the end of the array
+            //Search for the end of the dictionary
             $flines  = file($fileName);            
-            for ($i = count($flines); $i > 200; $i-- ) {
+            for ($i = count($flines); $i > 1; $i-- ) {
                 $flines[$i+1] = $flines[$i];
-                if (trim($flines[$i]) == ");") {
+                if (trim($flines[$i]) == "}") {
                     break;
                 }                
             }
-            if (trim($flines[$i]) == ");") {
+            if (trim($flines[$i]) == "}") {
                 //Update the line
                 $flines[$i] = $strNewLine;
                 //reWrite the file
