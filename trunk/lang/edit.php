@@ -63,7 +63,7 @@
         iniTable();
         echo "<h1>".$filename."</h1>";
         if ($filename != "lang.en.php") {
-            echo "<h2>To prevent data losses Edit and Save only one record at a time!<h2>";
+            echo "<h2>To prevent data losses Edit and Save only one record at a time!</h2>";
         }
 
         $flines  = file($filename);
@@ -125,6 +125,7 @@
             }
         }
         echo "</table>";
+        echo "<br /><a href='index.php'>Back to main page</a>";
         endTable();
     }
 
