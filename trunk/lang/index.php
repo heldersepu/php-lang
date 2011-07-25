@@ -121,8 +121,8 @@
         elseif (substr($strKey,0,strlen($iniKey)) != $iniKey) {
             $strMessage = "The Key must start with $iniKey ' ";
         }
-        elseif (strlen($strKey) > 18) {
-            $strMessage = "The Key must be less than 18 chars  ";
+        elseif (strlen($strKey) > 25) {
+            $strMessage = "The Key must be less than 25 chars  ";
         }
         elseif (substr($strValue,0,1) != '"' or substr($strValue,-2) != '";') {
             $strMessage = 'The Value must start with " and end with "; ';
