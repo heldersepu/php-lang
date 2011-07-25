@@ -8,15 +8,16 @@
   */
 
     class language {
-        // Section 1...
-        public $hello                 = "Hola Mundo";
-        public $join_fgl              = "Unete a FGL";
-        public $ps3                   = "PS3";
-        public $xbox                  = "Xbox 360";
-
-        // Section 2...
-        public $forgot_pw             = "Olvido el password?";
-        public $join_lad              = "Unete al torneo";
-        public $the_end               = "El Fin";
+        public $hello                 = "Hola Mundo !!";
+        public $photo_album           = "Album de Fotos";
+        public $some_javascripts      = "Algo de JavaScripts";
+        public $my_resume             = "Mi Resume";
+        public $upload                = "Upload";
+        public $videos                = "Videos";
+        public $tic_tac_toe           = "Tic Tac Toe";
+        public $emulators             = "Simuladores";
+        public $code_samples          = "Ejemplos de Código";
+        public $news_sites            = "Noticias";
+        public $gmapcatcher           = "GMapCatcher";
     }
 ?>
