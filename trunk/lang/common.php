@@ -36,7 +36,7 @@
     
     function echoJavaScript()
     {
-        $month = strtoupper(date(F));
+        $month = strtoupper(date("F"));
         echo "<script type=\"text/javascript\">";
         echo "function upBtn(theText)";
         echo "{";
