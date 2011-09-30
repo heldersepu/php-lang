@@ -65,7 +65,7 @@
         <tr>
         <td colspan='2' >
             <input type='text' size='4' name='strCode' value='Code' onkeyup='return upBtn(this);'>
-            <input type='submit' value='Add Data' id='Save' disabled='true' />
+            <input type='submit' value='Add Data' id='Save' disabled='disabled' />
         </td>
         </tr>
         </table>
